@@ -1,5 +1,187 @@
 extends layout
-
+  
 block content
-  h1= title
-  p Welcome to #{title}
+
+  section(class="d-flex vh-100 bg-primary justify-content-center align-items-center masthead py-5 my-5" id="start")
+    div(class="container-fluid justify-content-center py-10")
+        div(class="row justify-content-center py-2")
+            div(class="col-10 col-md-2")
+              img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/avataaars.svg", alt="Alt")
+        div(class="row justify-content-center")
+            h1(class="text-white text-uppercase py-2") Start Bootstrap   
+        div(class="row justify-content-center py-2")
+            div(class="col-md-6")
+             div(class="custom-divider divider-light")
+              div(class="divider-line")
+              i(class="fa fa-star")
+              div(class="divider-line")    
+        div(class="row justify-content-center py-4")
+            h5(class="font-weight-light text-white") Graphic Artist - Web Designer - Illustrator
+
+
+  section(class="container py-5 my-5 vh-100 justify-content-center align-items-center" id="portfolio" ) 
+    h1(class="text-secondary text-center text-uppercase") PORTFOLIO
+    div(class="row justify-content-center py-2")
+      div(class="col-md-6")
+        div(class="custom-divider divider-dark")
+          div(class="divider-line")
+          i(class="fa fa-star")
+          div(class="divider-line")
+
+
+    div(class="row justify-content-center")
+      //- Foreach portafolio
+      div(class="col-10 col-md-3 p-0 m-3")
+          div(class="portafolio justify-content-center d-flex align-items-center rounded"
+            data-toggle="modal", 
+            data-target="#myModal",
+            data-title="Portfolio uno"
+            data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png"
+            data-description="Lorem Lorem"
+          )
+            i(
+              class="fa fa-plus text-white fa-3x"
+            )
+          img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png", 
+            alt="Portafolio 1", 
+            class="img-fluid rounded shadow-lg"
+          )
+      div(class="col-10 col-md-3 p-0 m-3")
+          div(class="portafolio justify-content-center d-flex align-items-center rounded"
+            data-toggle="modal", 
+            data-target="#myModal2",
+            data-title="Portafolio uno"
+            data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png"
+            data-description="Lorem Lorem"
+          )
+            i(
+              class="fa fa-plus text-white fa-3x"
+            )
+          img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png", 
+            alt="Portafolio 1", 
+            class="img-fluid rounded shadow-lg"
+          )
+      div(class="col-md-3 p-0 m-3")
+          div(class="portafolio justify-content-center d-flex align-items-center rounded"
+            data-toggle="modal", 
+            data-target="#myModal3",
+            data-title="Portafolio uno"
+            data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png"
+            data-description="Lorem Lorem"
+          )
+            i(
+              class="fa fa-plus text-white fa-3x"
+            )
+          img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png", 
+            alt="Portafolio 1", 
+            class="img-fluid rounded shadow-lg"
+          )
+
+      <div class="portfolio-modal modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+         <div class="modal-content">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">
+                <i class="fa fa-times"></i>
+             </span>
+             </button>
+         <div class="modal-body text-center py-5">
+             <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title -->
+                   <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                   <!-- Icon Divider -->
+                    <div class="custom-divider divider-dark">
+                     <div class="divider-line"></div>
+                      <i class="fa fa-star"></i>
+                     <div class="divider-line"></div>
+                    </div>
+                    
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5 py-4" src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fa fa-times fa-fw"></i>Close Window
+                </button>
+                </div>
+              </div>
+             </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+         <div class="modal-content">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">
+                <i class="fa fa-times"></i>
+             </span>
+             </button>
+         <div class="modal-body text-center py-5">
+             <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title -->
+                   <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                   <!-- Icon Divider -->
+                    <div class="custom-divider divider-dark">
+                     <div class="divider-line"></div>
+                      <i class="fa fa-star"></i>
+                     <div class="divider-line"></div>
+                    </div>
+                    
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5 py-4" src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fa fa-times fa-fw"></i>Close Window
+                </button>
+                </div>
+              </div>
+             </div>
+         </div>
+        </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+         <div class="modal-content">
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">
+                <i class="fa fa-times"></i>
+             </span>
+             </button>
+         <div class="modal-body text-center py-5">
+             <div class="container ">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <!-- Portfolio Modal - Title -->
+                   <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                   <!-- Icon Divider -->
+                    <div class="custom-divider divider-dark">
+                     <div class="divider-line"></div>
+                      <i class="fa fa-star"></i>
+                     <div class="divider-line"></div>
+                    </div>
+                    
+                <!-- Portfolio Modal - Image -->
+                <img class="img-fluid rounded mb-5 py-4" src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png" alt="">
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fa fa-times fa-fw"></i>Close Window
+                </button>
+                </div>
+              </div>
+             </div>
+         </div>
+        </div>
+        </div>
+    </div>
+ 
+
+
