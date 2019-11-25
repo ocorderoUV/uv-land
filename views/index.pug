@@ -1,7 +1,37 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to aa #{title}
 
-  button.btn(type='submit') Start
+   //- //- START SECCION
+
+  section(class="d-flex vh-100 justify-content-center align-items-center masthead" id="portfolio" style="background:#4CD2B4")
+    div(class="container-fluid justify-content-center")
+        div(class="row justify-content-center")
+            div(class="col-7 col-md-2")
+              img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/avataaars.svg", alt="Alt")
+        div(class="container-fluid justify-content-center py-4")
+          div(class="row justify-content-center")
+            h1(class="text-white font-weight-bolder text-uppercase") Start Bootstrap
+          div(class="row justify-content-center")
+           div(class="divider-custom-icon")
+            i.fa.fa-minus.fa-3x(aria-hidden='true' style="color:white")
+           div(class="divider-custom-icon")
+            i.fa.fa-star.fa-3x(aria-hidden='true' style="color:white")
+           div(class="divider-custom-icon")
+            i.fa.fa-minus.fa-3x(aria-hidden='true' style="color:white")
+          div(class="row justify-content-center")
+           h5(class="font-weight-bold text-white") Graphic Artist - Web Designer - Illustrator
+           
+
+   //- //- PORTOLIO SECCION
+  section(id="portfolio", class="container py-5 my-5") 
+    h1(class="text-secondary text-center") PORTFOLIO
+     div(class="row justify-content-center py-2")
+      div(class="col-md-6")
+        div(class="custom-divider divider-dark")
+          div(class="divider-line")
+          i(class="fa fa-star")
+          div(class="divider-line")
+
+    
+    div(class="row justify-content-center")
