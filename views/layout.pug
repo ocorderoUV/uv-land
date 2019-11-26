@@ -4,7 +4,7 @@ html
   head
     title Landig Page
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", crossorigin="anonymous")
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
     link(rel="stylesheet", href="/stylesheets/style.css")
     
@@ -34,139 +34,29 @@ html
               a(class="nav-link py-3 px-0 px-lg-4 rounded js-scroll-trigger", href="#contact" ) Contact
 
     block content
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
-    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js", integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o", crossorigin="anonymous")
-  
- 
-//-   section(id="portfolio", class="container py-5 my-5") 
-//-     h1(class="text-secondary text-center") PORTFOLIO
-//-      div(class="row justify-content-center py-2")
-//-       div(class="col-md-6")
-//-         div(class="custom-divider divider-dark")
-//-           div(class="divider-line")
-//-           i(class="fa fa-star")
-//-           div(class="divider-line")
-//-     div(class="row justify-content-center")
-//-       //- Foreach portafolio
-//-       div(class="col-10 col-md-3 p-0 m-3")
-//-           div(class="portafolio justify-content-center d-flex align-items-center rounded"
-//-             data-toggle="modal", 
-//-             data-target="#myModal",
-//-             data-title="Portfolio uno"
-//-             data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png"
-//-             data-description="Lorem Lorem"
-//-           )
-//-             i(
-//-               class="fa fa-plus text-white fa-3x"
-//-             )
-//-           img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png", 
-//-             alt="Portafolio 1", 
-//-             class="img-fluid rounded shadow-lg"
-//-           )
-//-       div(class="col-10 col-md-3 p-0 m-3")
-//-           div(class="portafolio justify-content-center d-flex align-items-center rounded"
-//-             data-toggle="modal", 
-//-             data-target="#myModal2",
-//-             data-title="Portafolio uno"
-//-             data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png"
-//-             data-description="Lorem Lorem"
-//-           )
-//-             i(
-//-               class="fa fa-plus text-white fa-3x"
-//-             )
-//-           img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png", 
-//-             alt="Portafolio 1", 
-//-             class="img-fluid rounded shadow-lg"
-//-           )
-//-       div(class="col-md-3 p-0 m-3")
-//-           div(class="portafolio justify-content-center d-flex align-items-center rounded"
-//-             data-toggle="modal", 
-//-             data-target="#myModal3",
-//-             data-title="Portafolio uno"
-//-             data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png"
-//-             data-description="Lorem Lorem"
-//-           )
-//-             i(
-//-               class="fa fa-plus text-white fa-3x"
-//-             )
-//-           img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png", 
-//-             alt="Portafolio 1", 
-//-             class="img-fluid rounded shadow-lg"
-//-           )
 
-//-       #myModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
-//-   .modal-dialog.modal-xl(role='document')
-//-     .modal-content
-//-       button.close(type='button', data-dismiss='modal', aria-label='Close')
-//-         span(aria-hidden='true')
-//-           i.fa.fa-times
-//-       .modal-body.text-center.py-5
-//-         .container
-//-           .row.justify-content-center
-//-             .col-lg-8
-//-               // Portfolio Modal - Title
-//-               h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
-//-               // Icon Divider
-//-               .custom-divider.divider-dark
-//-                 .divider-line
-//-                 i.fa.fa-star
-//-                 .divider-line
-//-               // Portfolio Modal - Image
-//-               img.img-fluid.rounded.mb-5.py-4(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png', alt='')
-//-               // Portfolio Modal - Text
-//-               p.mb-5
-//-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-//-               button.btn.btn-primary(href='#', data-dismiss='modal')
-//-                 i.fa.fa-times.fa-fw
-//-                 | Close Window
-//- #myModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
-//-   .modal-dialog.modal-xl(role='document')
-//-     .modal-content
-//-       button.close(type='button', data-dismiss='modal', aria-label='Close')
-//-         span(aria-hidden='true')
-//-           i.fa.fa-times
-//-       .modal-body.text-center.py-5
-//-         .container
-//-           .row.justify-content-center
-//-             .col-lg-8
-//-               // Portfolio Modal - Title
-//-               h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
-//-               // Icon Divider
-//-               .custom-divider.divider-dark
-//-                 .divider-line
-//-                 i.fa.fa-star
-//-                 .divider-line
-//-               // Portfolio Modal - Image
-//-               img.img-fluid.rounded.mb-5.py-4(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png', alt='')
-//-               // Portfolio Modal - Text
-//-               p.mb-5
-//-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-//-               button.btn.btn-primary(href='#', data-dismiss='modal')
-//-                 i.fa.fa-times.fa-fw
-//-                 | Close Window
-//-   #myModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
-//-     .modal-dialog.modal-xl(role='document')
-//-       .modal-content
-//-         button.close(type='button', data-dismiss='modal', aria-label='Close')
-//-           span(aria-hidden='true')
-//-             i.fa.fa-times
-//-         .modal-body.text-center.py-5
-//-           .container
-//-             .row.justify-content-center
-//-               .col-lg-8
-//-                 // Portfolio Modal - Title
-//-                 h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
-//-                 // Icon Divider
-//-                 .custom-divider.divider-dark
-//-                   .divider-line
-//-                   i.fa.fa-star
-//-                   .divider-line
-//-                 // Portfolio Modal - Image
-//-                 img.img-fluid.rounded.mb-5.py-4(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png', alt='')
-//-                 // Portfolio Modal - Text
-//-                 p.mb-5
-//-                   | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
-//-                 button.btn.btn-primary(href='#', data-dismiss='modal')
-//-                   i.fa.fa-times.fa-fw
-//-                   | Close Window
-  
+  //- Same modal for all projects
+  div(class="modal fade portfolio-modal" 
+      id="exampleModal" 
+      tabindex="-1" 
+      role="dialog" 
+      aria-labelledby="exampleModalLabel" 
+      aria-hidden="true"
+      )
+    div(class="modal-dialog" role="document")
+        div(class="modal-content")
+          button(type="button", class="close", data-dismiss="modal", aria-label="Close")
+            span(aria-hidden="true") &times;
+          div(class="modal-body py-5 mt-5 px-4 text-center")
+              div(class="container")
+                div(class="row justify-content-center")
+                  div(class="col")
+                    img(class="image img-fluid rounded")
+                    p(class="description py-5")
+                    button(type="button" class="btn btn-primary rounded" data-dismiss="modal") Close Windows
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    script(src="/javascripts/portafolio.js")
