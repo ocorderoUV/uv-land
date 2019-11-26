@@ -5,6 +5,17 @@ html
 
   head
     title= title
+
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/mobile-device.css', media='screen and (max-device-width: 480px)')
+    meta( name='viewport', content='width=device-width, initial-scale=1', maximum-scale='1', user-scalable='no')
+  body
+    block content
+    include footer
+    include copyright
+
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel='stylesheet', href='/css/boostrap.css')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
@@ -42,3 +53,4 @@ html
 
   block content
   block contact
+
