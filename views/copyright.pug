@@ -1,4 +1,9 @@
 //- includes/foot.pug
 copyright#copyright
+       
        div.copyright
-          p Copyright © Your Website 2019
+           div.textcopyright(style='display: inline-block;')
+            p Copyright © Your Website 2019
+           div.textcopyright.scroll-to-top.d-lg-none.position-fixed(style='display: inline-block;')
+               a.js-scroll-trigger.d-block.text-left.text-white.rounded(href='#page-top')
+                  i.fa.fa-chevron-up                                                              
