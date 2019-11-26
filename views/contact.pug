@@ -1,44 +1,36 @@
-doctype
-html
-  head
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    link(rel="stylesheet", href="../src/css/landing-custom-contact.css")
-
-  body
-    section(id="contact" class="page-section")
-      div(class="container")
-        h2(class="page-section-heading text-center text-uppercase text-secondary mb-0") Contact Me
-        div(class="divider-custom")
-          div(class="divider-custom-line")
-          div(class="divider-custom-icon")
-            i(class="fa fa-star") 
-          div(class="divider-custom-line")
-        div(class="row")
-          div(class="col-lg-8 mx-auto")
-            form(id="contactForm")
-              div(class="control-group")
-                div(class="form-group floating-label-form-group controls mb-0 pb-2")
-                  label Name
-                  input(type="text" class="form-control" placeholder="Name" required="required" data-validation-required-message="Please, enter your name")
-                  p(class="help-block text-danger")
-              div(class="control-group")
-                div(class="form-group floating-label-form-group controls mb-0 pb-2")
-                  label Email Address
-                  input(type="email" class="form-control" placeholder="EMail Address" required="required" data-validation-required-message="Please, enter your email")
-                  p(class="help-block text-danger")
-              div(class="control-group")
-                div(class="form-group floating-label-form-group controls mb-0 pb-2")
-                  label Phone Number
-                  input(type="tel" class="form-control" placeholder="Phone Number" required="required" data-validation-required-message="Please, enter your phone number")
-                  p(class="help-block text-danger")
-              div(class="control-group")
-                div(class="form-group floating-label-form-group controls mb-0 pb-2")
-                  label Message
-                  textarea(id="message" class="form-control" rows="5" placeholder="Message" data-validation-required-message="Please, enter a message")
-                  p(class="help-block text-danger")
-              br
-              div(id="success")
-              div(class="form-group")
-                button(id="sendMessageBtn" class="btn btn-primary-custom btn-xl" type="submit") Send
+section(id="contact" class="page-section")
+  div(class="container")
+    h2(class="page-section-heading text-center text-uppercase text-secondary mb-0") Contact Me
+    div(class="divider-custom")
+      div(class="divider-custom-line")
+      div(class="divider-custom-icon")
+        i(class="fa fa-star") 
+      div(class="divider-custom-line")
+    div(class="row")
+      div(class="col-lg-8 mx-auto")
+        form(id="contactForm")
+          div(class="control-group")
+            div(class="form-group floating-label-form-group controls mb-0 pb-2")
+              label Name
+              input(type="text" class="form-control" placeholder="Name" required="required" data-validation-required-message="Please, enter your name")
+              p(class="help-block text-danger")
+          div(class="control-group")
+            div(class="form-group floating-label-form-group controls mb-0 pb-2")
+              label Email Address
+              input(type="email" class="form-control" placeholder="EMail Address" required="required" data-validation-required-message="Please, enter your email")
+              p(class="help-block text-danger")
+          div(class="control-group")
+            div(class="form-group floating-label-form-group controls mb-0 pb-2")
+              label Phone Number
+              input(type="tel" class="form-control" placeholder="Phone Number" required="required" data-validation-required-message="Please, enter your phone number")
+              p(class="help-block text-danger")
+          div(class="control-group")
+            div(class="form-group floating-label-form-group controls mb-0 pb-2")
+              label Message
+              textarea(id="message" class="form-control" rows="5" placeholder="Message" data-validation-required-message="Please, enter a message")
+              p(class="help-block text-danger")
+          br
+          div(id="success")
+          div(class="form-group")
+            button(id="sendMessageBtn" class="btn btn-primary-custom btn-xl" type="submit") Send
 
