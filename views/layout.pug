@@ -11,11 +11,7 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/mobile-device.css', media='screen and (max-device-width: 480px)')
     meta( name='viewport', content='width=device-width, initial-scale=1', maximum-scale='1', user-scalable='no')
-  body
-    block content
-    include footer
-    include copyright
-
+  
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     link(rel='stylesheet', href='/css/boostrap.css')
     link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
@@ -52,5 +48,164 @@ html
               a(class="nav-link py-3 px-0 px-lg-4 rounded js-scroll-trigger", href="#contact" ) Contact
 
   block content
-  block contact
+  section(class="d-flex vh-100 justify-content-center align-items-center masthead" id="portfolio" style="background:#4CD2B4")
+    div(class="container-fluid justify-content-center")
+        div(class="row justify-content-center")
+            div(class="col-7 col-md-2")
+              img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/avataaars.svg", alt="Alt")
+        div(class="container-fluid justify-content-center py-4")
+          div(class="row justify-content-center")
+            h1(class="text-white font-weight-bolder text-uppercase") Start Bootstrap
+          div(class="row justify-content-center py-2")
+            div(class="col-md-6")
+             div(class="custom-divider divider-light")
+              div(class="divider-line")
+              i(class="fa fa-star")
+              div(class="divider-line")    
+        div(class="row justify-content-center py-4")
+            h5(class="font-weight-bold text-white") Graphic Artist - Web Designer - Illustrator
+           
+
+ 
+  section(id="portfolio", class="container py-5 my-5") 
+    h1(class="text-secondary text-center") PORTFOLIO
+     div(class="row justify-content-center py-2")
+      div(class="col-md-6")
+        div(class="custom-divider divider-dark")
+          div(class="divider-line")
+          i(class="fa fa-star")
+          div(class="divider-line")
+
+
+    div(class="row justify-content-center")
+      //- Foreach portafolio
+      div(class="col-10 col-md-3 p-0 m-3")
+          div(class="portafolio justify-content-center d-flex align-items-center rounded"
+            data-toggle="modal", 
+            data-target="#myModal",
+            data-title="Portfolio uno"
+            data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png"
+            data-description="Lorem Lorem"
+          )
+            i(
+              class="fa fa-plus text-white fa-3x"
+            )
+          img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png", 
+            alt="Portafolio 1", 
+            class="img-fluid rounded shadow-lg"
+          )
+      div(class="col-10 col-md-3 p-0 m-3")
+          div(class="portafolio justify-content-center d-flex align-items-center rounded"
+            data-toggle="modal", 
+            data-target="#myModal2",
+            data-title="Portafolio uno"
+            data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png"
+            data-description="Lorem Lorem"
+          )
+            i(
+              class="fa fa-plus text-white fa-3x"
+            )
+          img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png", 
+            alt="Portafolio 1", 
+            class="img-fluid rounded shadow-lg"
+          )
+      div(class="col-md-3 p-0 m-3")
+          div(class="portafolio justify-content-center d-flex align-items-center rounded"
+            data-toggle="modal", 
+            data-target="#myModal3",
+            data-title="Portafolio uno"
+            data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png"
+            data-description="Lorem Lorem"
+          )
+            i(
+              class="fa fa-plus text-white fa-3x"
+            )
+          img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png", 
+            alt="Portafolio 1", 
+            class="img-fluid rounded shadow-lg"
+          )
+
+      #myModal.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
+  .modal-dialog.modal-xl(role='document')
+    .modal-content
+      button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true')
+          i.fa.fa-times
+      .modal-body.text-center.py-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+              // Icon Divider
+              .custom-divider.divider-dark
+                .divider-line
+                i.fa.fa-star
+                .divider-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5.py-4(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png', alt='')
+              // Portfolio Modal - Text
+              p.mb-5
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              button.btn.btn-primary(href='#', data-dismiss='modal')
+                i.fa.fa-times.fa-fw
+                | Close Window
+#myModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
+  .modal-dialog.modal-xl(role='document')
+    .modal-content
+      button.close(type='button', data-dismiss='modal', aria-label='Close')
+        span(aria-hidden='true')
+          i.fa.fa-times
+      .modal-body.text-center.py-5
+        .container
+          .row.justify-content-center
+            .col-lg-8
+              // Portfolio Modal - Title
+              h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+              // Icon Divider
+              .custom-divider.divider-dark
+                .divider-line
+                i.fa.fa-star
+                .divider-line
+              // Portfolio Modal - Image
+              img.img-fluid.rounded.mb-5.py-4(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cake.png', alt='')
+              // Portfolio Modal - Text
+              p.mb-5
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+              button.btn.btn-primary(href='#', data-dismiss='modal')
+                i.fa.fa-times.fa-fw
+                | Close Window
+  #myModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='portfolioModal1Label', aria-hidden='true')
+    .modal-dialog.modal-xl(role='document')
+      .modal-content
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true')
+            i.fa.fa-times
+        .modal-body.text-center.py-5
+          .container
+            .row.justify-content-center
+              .col-lg-8
+                // Portfolio Modal - Title
+                h2.portfolio-modal-title.text-secondary.text-uppercase.mb-0 Log Cabin
+                // Icon Divider
+                .custom-divider.divider-dark
+                  .divider-line
+                  i.fa.fa-star
+                  .divider-line
+                // Portfolio Modal - Image
+                img.img-fluid.rounded.mb-5.py-4(src='https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/circus.png', alt='')
+                // Portfolio Modal - Text
+                p.mb-5
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
+                button.btn.btn-primary(href='#', data-dismiss='modal')
+                  i.fa.fa-times.fa-fw
+                  | Close Window
+  
+block content
+body
+    include about
+    include contact
+    include footer
+    include copyright
+
 
