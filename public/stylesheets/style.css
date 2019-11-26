@@ -1,3 +1,11 @@
+.bg-secondary {
+  background-color:#343a40 !important;
+}
+
+.btn-primary {
+  background-color: #1abc9c !important;
+}
+
 .copyright {
     background-color:#343a40;
     text-align: center !important;
@@ -54,3 +62,44 @@
       color:#117964 !important;
       
      }
+
+     .custom-divider{
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    
+    .custom-divider .divider-line:first-child {
+      margin-right: 1rem;
+    }
+    
+    .custom-divider .divider-line:last-child {
+      margin-left: 1rem;
+    }
+    
+    .custom-divider i {
+      font-size: 2rem;
+    }
+    
+    .divider-line {
+      width: 7rem;
+      border-radius: 25px;
+      height: 4px;
+    }
+    
+    .divider-dark{
+      color: #2c3e50;
+    }
+    
+    .divider-light{
+      color: white;
+    }
+    
+    .divider-dark .divider-line{
+      background: #2c3e50;
+    }
+    
+    .divider-light .divider-line{
+      background: white;
+    }
+    
