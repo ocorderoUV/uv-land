@@ -27,6 +27,7 @@ app.use(sassMiddleware({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
