@@ -1,0 +1,47 @@
+section(id="portafolio", class="container py-5 my-5") 
+    h1(class="text-secondary text-center") Portafolio
+
+    //- Divider
+    div(class="row justify-content-center py-2")
+      div(class="col-md-6")
+        div(class="custom-divider divider-dark")
+          div(class="divider-line")
+          i(class="fa fa-star")
+          div(class="divider-line")
+
+    
+    div(class="row justify-content-center")
+        //- Foreach portafolio
+        div(class="col-10 col-md-4 p-0 m-3")
+            div(class="row px-3")
+                div(class="portafolio justify-content-center d-flex align-items-center rounded"
+                    data-toggle="modal", 
+                    data-target="#exampleModal",
+                    data-title="Portafolio uno"
+                    data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png"
+                    data-description="Lorem Lorem"
+                )
+                    i(
+                    class="fa fa-plus text-white fa-3x"
+                    )
+                img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/cabin.png", 
+                    alt="Portafolio 1", 
+                    class="img-fluid rounded shadow-lg"
+                )
+        div(class="col-10 col-md-4 p-0 m-3")
+            div(class="row px-3")
+                div(class="portafolio justify-content-center d-flex align-items-center rounded"
+                    data-toggle="modal", 
+                    data-target="#exampleModal",
+                    data-title="Portafolio uno"
+                    data-img="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/game.png"
+                    data-description="Lorem Game"
+                )
+                    i(
+                    class="fa fa-plus text-white fa-3x"
+                    )
+                img(src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/portfolio/game.png", 
+                    alt="Portafolio 1", 
+                    class="img-fluid rounded shadow-lg"
+                )
+
